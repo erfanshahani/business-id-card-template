@@ -1,0 +1,144 @@
+:root {
+    --primary-color: #007bff; /* آبی اصلی */
+    --secondary-color: #6c757d; /* خاکستری */
+    --card-bg: #ffffff; /* پس‌زمینه کارت سفید */
+    --gradient-start: #4A90E2; /* رنگ شروع گرادیان */
+    --gradient-end: #004d9a; /* رنگ پایان گرادیان تیره */
+    --text-dark: #212529; /* متن تیره */
+    --shadow-light: rgba(0, 0, 0, 0.1);
+    --shadow-strong: rgba(0, 77, 154, 0.4);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f4f7f6; /* پس‌زمینه ملایم */
+    font-family: Tahoma, sans-serif;
+    direction: rtl;
+}
+
+.card-container {
+    perspective: 1000px; /* برای آماده‌سازی افکت‌های 3D در آینده */
+}
+
+.id-card {
+    width: 350px;
+    height: 550px;
+    background-color: var(--card-bg);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 15px 30px var(--shadow-strong), 0 5px 15px var(--shadow-light);
+    transition: transform 0.3s ease;
+}
+
+/* افکت جذاب هنگام شناور شدن ماوس */
+.id-card:hover {
+    transform: translateY(-5px) scale(1.02);
+}
+
+/* --- هدر و نوار گرادیانی --- */
+.card-header {
+    background: linear-gradient(135deg, var(--gradient-start) 0%, var(--gradient-end) 100%);
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* --- بدنه کارت (عکس و عنوان) --- */
+.card-body {
+    text-align: center;
+    padding: 25px 20px;
+}
+
+.profile-photo {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    border: 5px solid var(--gradient-start);
+    padding: 3px;
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.8), 0 5px 15px var(--shadow-light);
+    overflow: hidden;
+}
+
+.profile-photo img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    
+}
+
+.name {
+    color: var(--text-dark);
+    margin: 10px 0 5px;
+    font-size: 1.8em;
+    font-weight: 900;
+}
+
+.title {
+    color: var(--gradient-end);
+    font-size: 1em;
+    font-weight: 500;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #e9ecef;
+    padding-bottom: 10px;
+}
+
+/* --- فوتر و جزئیات --- */
+.card-footer {
+    padding: 0 30px 20px;
+    color: var(--secondary-color);
+}
+
+.info-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    font-size: 0.95em;
+    border-bottom: 1px dashed #e9ecef;
+    padding-bottom: 5px;
+}
+
+.info-row i {
+    color: var(--gradient-start);
+    width: 20px;
+    text-align: center;
+    margin-left: 10px;
+}
+
+.info-row span:first-of-type {
+    color: var(--secondary-color);
+    font-weight: 600;
+}
+
+.info-value {
+    margin-right: auto;
+    font-weight: bold;
+    color: var(--text-dark);
+}
+
+/* --- المان طراحی مدرن (گوشه پایین) --- */
+.design-element {
+    height: 10px;
+    background-color: var(--gradient-start);
+    width: 100%;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 50%); /* ایجاد یک برش زاویه‌دار */
+}
+.zakaria{
+    text-align: left;
+    
+}
+.zakaria1{
+    text-decoration: none;
+}
+.email{
+    text-decoration: none;
+}
