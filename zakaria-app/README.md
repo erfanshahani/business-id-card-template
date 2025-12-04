@@ -14,7 +14,7 @@ A clean and responsive employee ID card built with HTML & CSS. Easily customizab
 3. Replace logo.png with your company logo.  
 
 ## Technologies  
-HTML5, CSS3 (Flexbox)
+HTML5, CSS3, (Flexbox)
 
 ## License  
 MIT
